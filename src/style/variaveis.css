@@ -1,0 +1,26 @@
+:root {
+    /* Brand */
+    --primary: #4E78C1;
+    --secondary: #2A4F9A;
+    --primary-dark: #1F3B73;
+    --primary-light: #F6F4F4;
+
+    /*links*/
+
+    --link: #2A4F9A;
+    --link-hover: #0055ff;
+
+    /* Neutrals */
+    --white: #FFFFFF;
+    --gray-light: #F5F7FA;
+    --gray-border: #E5E7EB;
+
+    /* Text */
+    --text-main: #111111;
+    --text-secondary: #444444;
+    --text-muted: #6B7280;
+
+    /* CTA */
+    --cta: #16A34A;
+    --cta-hover: #15803D;
+}
