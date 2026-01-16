@@ -140,6 +140,17 @@ section {
     }
 }
 
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--primary-dark);
+    margin-bottom: 16px;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+}
+
 .title {
     margin-top: 80px;
     font-size: 1.5em;
