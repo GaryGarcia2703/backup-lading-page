@@ -1,15 +1,38 @@
 @media (min-width: 769px) {
+    #hero {
+        min-height: 100vh;
+    }
+
     .btn-mobile {
         display: none;
     }
 
-    ul {
+    #nav-links {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         position: static;
-        gap: 1rem;
+        gap: 4rem;
         width: auto;
         padding: 0;
+
+        /*  RESET do mobile */
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        box-shadow: none;
+        background: transparent;
+
+        li {
+            background-color: var(--primary-light);
+            padding: 10px 26px;
+            border-radius: 10px;
+            
+
+            &:hover {
+                background-color: var(--white);
+            }
+        }
     }
 
     .btn-default {

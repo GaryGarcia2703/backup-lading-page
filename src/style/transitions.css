@@ -1,0 +1,58 @@
+/*hero animação*/
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    font-size: 2rem;
+    color: white;
+    opacity: 0.7;
+}
+
+#hero {
+    position: relative; /* MUY IMPORTANTE */
+    background-color: var(--primary-dark);
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 80px;
+
+    #hero-content {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transition: transform 0.1s linear;
+    }
+
+    #hero-logo {
+        width: 240px;
+        transition: transform 0.2s linear;
+        will-change: transform;
+    }
+
+    #hero-title {
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+/*mudança de cor no nav com envento scroll*/
+
+header.scrolled {
+    background-color: var(--primary-dark); 
+}
+
+
+header.scrolled a {
+    color: #000;
+
+    &:hover {
+        color: var(--link-hover);
+        border-bottom: 1px solid var(--link-hover);
+    }
+}
