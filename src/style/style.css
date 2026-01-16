@@ -1,4 +1,7 @@
+/* Importa el archivo de variables CSS (colores, tamaños, etc.) */
 @import url(variaveis.css);
+
+/* Reset básico y fuente global del sitio */
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +9,16 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* Habilita el scroll suave al usar links ancla */
 html {
     scroll-behavior: smooth;
 }
 
-/*Header e a tag nav e seus estilos*/
+/* ============================= */
+/* Botones globales */
+/* ============================= */
 
+/* Estilos base para todos los botones */
 .btn {
     padding: 10px 20px;
     border: none;
@@ -21,34 +28,41 @@ html {
     font-weight: 600;
     background-color: transparent;
     transition: background-color 0.4 ease;
-
 }
 
+/* Botón del menú mobile (icono hamburguesa) */
 .btn-mobile {
     font-size: 1.5em;
-    color: white;
 }
 
+/* Botón principal (CTA / contacto) */
 .btn-default{
     background-color: var(--cta);
     color: var(--primary-light);
     text-decoration: none;
 
+    /* Efecto hover del botón */
     &:hover {
         background-color: var(--cta-hover);
     }
 }
 
+/* ============================= */
+/* Header y navegación */
+/* ============================= */
+
+/* Header fijo en la parte superior */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: transparent;
-    padding: 12px 4%;
+    background-color: white;
+    padding: 5px 4%;
     z-index: 10;
 }
 
+/* Contenedor principal del navbar */
 .navbar {
     position: relative;
     display: flex;
@@ -56,18 +70,20 @@ header {
     align-items: center;
 }
 
+/* Logo del sitio */
 .logo{
     width: 100px;
     height: auto;
 }
 
+/* Lista de links del menú */
 #nav-links {
     background-color: var(--primary-light);
     border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 
     list-style: none;
-    display: flex;              
+    display: flex;
     flex-direction: column;
     gap: 15px;
 
@@ -77,14 +93,15 @@ header {
     left: 0;
     padding: 10px;
 
-    /* animación */
+    /* Estado oculto del menú */
     opacity: 0;
     transform: translateY(-15px);
     pointer-events: none;
 
+    /* Transición de aparición */
     transition: opacity 0.3s ease, transform 0.3s ease;
-    
 
+    /* Estado visible del menú */
     &.show {
         display: flex;
         opacity: 1;
@@ -93,10 +110,12 @@ header {
     }
 }
 
+/* Items de la lista del menú */
 li {
     text-align: center;
 }
 
+/* Links del menú */
 li a {
     color: var(--link);
     text-decoration: none;
@@ -104,27 +123,37 @@ li a {
     font-weight: 600;
     transition: all 0.4 ease;
 
+    /* Hover de los links */
     &:hover {
         color: var(--link-hover);
         border-bottom: 1px solid var(--link-hover);
     }
 }
 
+/* Botón CTA oculto por defecto (mobile) */
 .btn-default {
     display: none;
 }
 
-/*configuaração global para a nav nao ficar encima*/
+/* ============================= */
+/* Configuración global de secciones */
+/* ============================= */
+
+/* Evita que el header fijo tape el contenido al navegar por anclas */
 section {
     scroll-margin-top: 90px;
 }
 
-/*configuração das cards*/
+/* ============================= */
+/* Cards */
+/* ============================= */
+
+/* Estilo base de las cards */
 .card {
     background-color: var(--primary-light);
     max-width: 60vw;
     width: auto;
-    height: 45vh;
+    height: 52vh;
 
     text-align: center;
     padding: 20px;
@@ -132,7 +161,15 @@ section {
 
     border-radius: 8px;
     border: 1px solid var(--link);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.363);
+        transition: all 0.3s ease;
+    }
+
+    /* Texto interno de la card */
     p {
         margin-top: 15px;
         color: var(--text-secondary);
@@ -140,17 +177,35 @@ section {
     }
 }
 
+.diferenciais-card {
+    background: linear-gradient(
+        180deg,
+        #ffffff,
+        #c6e1fc9c
+    );
+}
+
+
+/* Iconos de las cards */
 .card-icon {
+    padding: 18px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
     font-size: 2.5rem;
-    color: var(--primary-dark);
+    color: var(--cta);
     margin-bottom: 16px;
 
+    /* Efecto hover del icono */
     &:hover{
         transform: scale(1.1);
         transition: transform 0.3s ease;
     }
 }
 
+/* Títulos generales de secciones */
 .title {
     margin-top: 80px;
     font-size: 1.5em;
@@ -158,6 +213,9 @@ section {
     color: var(--text-main);
 }
 
+/* ============================= */
+/* Sección Vantagens */
+/* ============================= */
 
 #vantagens-title {
     margin-top: 0px;
@@ -173,8 +231,12 @@ section {
     flex-direction: column;
 }
 
+/* ============================= */
+/* Sección Diferenciais */
+/* ============================= */
+
 #diferenciais-conteiner {
-    /*estilos de a secção inteira*/
+    /* estilos de la sección completa (pendiente) */
 }
 
 #diferenciais-title {
@@ -190,5 +252,95 @@ section {
     flex-direction: column;
 }
 
+/* ============================= */
+/* Sección Como Funciona */
+/* ============================= */
+
+#como-funciona {
+    padding: 0 4%;
+    background-color: var(--primary-light);
+    text-align: center;
+}
+
+#como-funciona-title {
+    padding: 80px 6.5%;
+    background-color: var(--gray-light);
+    text-align: center;
+}
+
+div#steps-conteiner {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.step-card {
+    background: linear-gradient(
+        180deg,
+        #ffffff,
+        #c6fcd6ce
+    );
+}
 
 
+
+#cta-consulta {
+    margin: 2rem 1rem;
+    padding: 2rem 1.5rem;
+
+    text-align: center;
+
+    background-color: rgba(190, 225, 255, 0.22);
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#cta-consulta h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#cta-consulta p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 48px;
+
+    border-radius: 14px;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+
+    color: #ffffff;
+    background-color: #22c55e; /* verde moderno */
+
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+
+    transition:
+    background-color 0.15s ease,
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+
+    &:hover {
+        background-color: #16a34a;
+        transform: translateY(-1px);
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+    }
+
+    &:active {
+        transform: translateY(1px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+}    

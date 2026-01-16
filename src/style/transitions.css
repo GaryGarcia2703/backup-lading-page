@@ -47,6 +47,10 @@ header.scrolled {
     background-color: var(--primary-dark); 
 }
 
+header.scrolled .btn-mobile{
+    color: white;
+}
+
 
 header.scrolled a {
     color: #000;
