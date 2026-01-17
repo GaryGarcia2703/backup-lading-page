@@ -153,7 +153,9 @@ section {
     background-color: var(--primary-light);
     max-width: 60vw;
     width: auto;
-    height: 52vh;
+    min-height: 160px;
+    height: auto;
+    padding: 1rem;
 
     text-align: center;
     padding: 20px;
@@ -207,7 +209,7 @@ section {
 
 /* Títulos generales de secciones */
 .title {
-    margin-top: 80px;
+    margin-top: 50px;
     font-size: 1.5em;
     font-weight: 700;
     color: var(--text-main);
@@ -217,7 +219,14 @@ section {
 /* Sección Vantagens */
 /* ============================= */
 
+#vantagens-conteiner {
+    text-align: center;
+    padding: 10px 2%;
+    margin-top: 10px;
+}
+
 #vantagens-title {
+    border-radius: 10px;
     margin-top: 0px;
     padding: 80px 4%;
     background-color: var(--primary-light);
@@ -236,13 +245,19 @@ section {
 /* ============================= */
 
 #diferenciais-conteiner {
-    /* estilos de la sección completa (pendiente) */
+    text-align: center;
+    padding: 20px 4%;
+    margin-top: 10px;
+  
 }
 
 #diferenciais-title {
     padding: 80px 6.5%;
-    background-color: var(--gray-light);
+    background-image: linear-gradient(var(--gray-light) ,var(--bg-soft) );
     text-align: center;
+    border-radius: 10px;
+    padding: 80px 6.5%;
+    
 }
 
 #diferenciais-cards-conteiner {
@@ -257,14 +272,15 @@ section {
 /* ============================= */
 
 #como-funciona {
-    padding: 0 4%;
-    background-color: var(--primary-light);
     text-align: center;
+    padding: 20px 4%;
+    margin-top: 10px;
 }
 
 #como-funciona-title {
     padding: 80px 6.5%;
-    background-color: var(--gray-light);
+    border-radius: 10px;
+    background-image: linear-gradient(var(--gray-light) , #c6fcd6ce);
     text-align: center;
 }
 
@@ -286,7 +302,7 @@ div#steps-conteiner {
 
 
 #cta-consulta {
-    margin: 2rem 1rem;
+    margin: 2rem 4rem;
     padding: 2rem 1.5rem;
 
     text-align: center;

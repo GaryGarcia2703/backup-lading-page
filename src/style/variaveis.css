@@ -3,7 +3,11 @@
     --primary: #4E78C1;
     --secondary: #2A4F9A;
     --primary-dark: #1F3B73;
-    --primary-light: #F6F4F4;
+    --primary-light: #ffffff;
+
+    /* fondo secciones */
+    --bg-soft: #BFCEED;              
+    --bg-soft-2: #e6f0ff;            
 
     /*links*/
 

@@ -116,12 +116,19 @@
     }
 
     div#vantagens-cards-conteiner,
-    div#diferenciais-cards-conteiner {
+    div#diferenciais-cards-conteiner{
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;      /* 👈 explícito */
+        flex-wrap: nowrap;     
         justify-content: space-around;
         gap: 2rem;
+    }
+
+    div#steps-conteiner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;     
+        justify-content: center;
     }
     .cta-btn {
         margin: 0 auto;
