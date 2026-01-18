@@ -8,9 +8,13 @@
     /* fondo secciones */
     --bg-soft: #BFCEED;              
     --bg-soft-2: #e6f0ff;            
+    --bg-soft-3: #c6e1fc9c;
+
+    --green-soft: #eafaf4;
+    --green-soft-2: #e3f7ee;
+    --green-soft-3: #e6f3f0;
 
     /*links*/
-
     --link: #2A4F9A;
     --link-hover: #0055ff;
 
