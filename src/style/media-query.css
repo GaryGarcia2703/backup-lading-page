@@ -1,6 +1,113 @@
 /* Mobile */
 /* Mobile */
+/* ============================= */
+/* MOBILE – até 767px */
+/* ============================= */
 @media (max-width: 767px) {
+
+    /* ============================= */
+    /* Tipografia */
+    /* ============================= */
+
+    body {
+        font-size: 14px; /* base mobile */
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    #cta-consulta h2 {
+        font-size: 1.3rem;
+    }
+
+    #cta-consulta p {
+        font-size: 0.95rem;
+    }
+
+    /* ============================= */
+    /* Header / Navbar */
+    /* ============================= */
+
+    header {
+        padding: 8px 4%;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    #nav-links {
+        width: 100%;
+        left: 0;
+        top: 100%;
+
+        border-radius: 0 0 12px 12px;
+    }
+
+    #nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 14px 0;
+
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    /* ============================= */
+    /* Seções */
+    /* ============================= */
+
+    section {
+        padding: 16px 4%;
+    }
+
+    #vantagens-title,
+    #diferenciais-title,
+    #como-funciona-title {
+        padding: 48px 6%;
+    }
+
+    /* ============================= */
+    /* Cards */
+    /* ============================= */
+
+    .card {
+        max-width: 100%;
+        min-height: unset;
+        height: auto;
+
+        padding: 16px;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    #vantagens-cards-conteiner,
+    #diferenciais-cards-conteiner,
+    #steps-conteiner {
+        flex-direction: column;
+    }
+
+    /* ============================= */
+    /* CTA */
+    /* ============================= */
+
+    #cta-consulta {
+        margin: 24px 0;
+        padding: 24px 16px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        height: 44px;
+        font-size: 0.95rem;
+    }
+
+    /* ============================= */
+    /* Footer */
+    /* ============================= */
 
     footer {
         width: 100%;
@@ -19,7 +126,7 @@
     }
 
     #site {
-        font-size: 1rem;
+        font-size: 1.2rem;
         opacity: 0.9;
     }
 
@@ -46,29 +153,27 @@
 
     .ul-conteiner ul {
         flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
         padding: 0;
+        gap: 12px;
     }
 
     .li-title {
-        font-weight: 600;
         font-size: 1rem;
-        margin-bottom: 8px;
+        font-weight: 600;
     }
 
     .links-footer {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         opacity: 0.85;
     }
 
     footer p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         opacity: 0.6;
         margin-top: 24px;
     }
 }
+
 
 
 /* Tablet */
