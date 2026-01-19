@@ -131,12 +131,6 @@ header {
     }
 }
 
-#nav-links a {
-    font-size: 1.2em;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
 
 
 /* Items de la lista del menú */
@@ -435,6 +429,12 @@ div#footer-conteiner {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+div.footer-columns {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
 }
 
 footer img {
