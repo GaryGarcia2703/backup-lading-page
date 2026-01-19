@@ -36,15 +36,38 @@ html {
 }
 
 /* Botón principal (CTA / contacto) */
-.btn-default{
-    background-color: var(--cta);
-    color: var(--primary-light);
+.btn-default {
     text-decoration: none;
+    background: linear-gradient(
+        to bottom,
+        #5eead4,
+        #22c55e
+    );
 
-    /* Efecto hover del botón */
-    &:hover {
-        background-color: var(--cta-hover);
-    }
+    color: #053e2a;
+    border-radius: 10px;
+
+    box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    0 6px 14px rgba(0, 0, 0, 0.15);
+
+    transition: 
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.btn-default:hover {
+    color: var(--white);
+    transform: translateY(-1px);
+    box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    0 10px 22px rgba(0, 0, 0, 0.22);
+}
+
+.btn-default:active {
+  transform: translateY(1px);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* ============================= */
@@ -151,7 +174,7 @@ section {
 /* Estilo base de las cards */
 .card {
     background-color: var(--primary-light);
-    max-width: 60vw;
+    max-width: 75vw;
     width: auto;
     min-height: 160px;
     height: auto;
@@ -225,6 +248,7 @@ section {
     margin-top: 10px;
 }
 
+/* div */
 #vantagens-title {
     border-radius: 10px;
     margin-top: 0px;
@@ -233,6 +257,7 @@ section {
     text-align: center;
 }
 
+/* conteiner flex */
 #vantagens-cards-conteiner {
     display: flex;
     gap: 20px;
@@ -251,6 +276,7 @@ section {
   
 }
 
+/* div */
 #diferenciais-title {
     padding: 80px 6.5%;
     background-image: linear-gradient(var(--white) ,var(--bg-soft-2) );
@@ -260,6 +286,7 @@ section {
     
 }
 
+/* conteiner flex */
 #diferenciais-cards-conteiner {
     display: flex;
     gap: 20px;
@@ -277,13 +304,19 @@ section {
     margin-top: 10px;
 }
 
+/* div */
 #como-funciona-title {
     padding: 80px 6.5%;
     border-radius: 10px;
-    background-image: linear-gradient(var(--green-soft-2) , var(--green-soft));
+    background-image: linear-gradient(
+        var(--white),
+        var(--green-soft-2)
+        );
+
     text-align: center;
 }
 
+/* conteiner flex */
 div#steps-conteiner {
     display: flex;
     gap: 20px;
@@ -291,16 +324,16 @@ div#steps-conteiner {
     flex-direction: column;
 }
 
+/* item flex */
 .step-card {
     background: linear-gradient(
-        180deg,
-        #ffffff,
-        #c6fceece
+        var(--white),
+        var(--green-soft-2)
     );
 }
 
 
-
+/* seccion para la consulta*/
 #cta-consulta {
     margin: 2rem 4rem;
     padding: 2rem 1.5rem;
@@ -313,6 +346,7 @@ div#steps-conteiner {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
+/* titulo consulta*/
 #cta-consulta h2 {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
@@ -323,6 +357,8 @@ div#steps-conteiner {
   margin-bottom: 1.5rem;
   color: #444;
 }
+
+/* botón frutiger aero*/
 
 .cta-btn {
     display: flex;
@@ -335,28 +371,100 @@ div#steps-conteiner {
     border-radius: 14px;
 
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 
     color: #ffffff;
-    background-color: #22c55e; /* verde moderno */
 
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    /* Frutiger Aero moderno */
+    background: linear-gradient(
+        to bottom,
+        #5eead4 0%,
+        #22c55e 55%,
+        #16a34a 100%
+    );
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.55),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+        0 6px 14px rgba(0, 0, 0, 0.18);
 
     transition:
-    background-color 0.15s ease,
-    transform 0.12s ease,
-    box-shadow 0.12s ease;
+        transform 0.12s ease,
+        box-shadow 0.12s ease,
+        filter 0.12s ease;
 
+
+    /* Hover — brillo + elevación */
     &:hover {
-        background-color: #16a34a;
         transform: translateY(-1px);
-        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
-    }
+        filter: brightness(1.04);
 
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, 0.65),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+            0 10px 22px rgba(0, 0, 0, 0.22);
+        }
+
+    /* Active — sensación de “presión” */
     &:active {
         transform: translateY(1px);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
+        filter: brightness(0.97);
 
-}    
+        box-shadow:
+            inset 0 2px 4px rgba(0, 0, 0, 0.25),
+            0 4px 10px rgba(0, 0, 0, 0.18);
+        } 
+
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--footer-bg);
+    padding: 5rem;
+}
+
+div#footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img {
+    width: 100px;
+}
+
+#site {
+    text-decoration: none;
+    color: var(--footer-text);
+    font-size: 1.5em;
+     
+    &:hover {
+        border-bottom: 1px solid var(--link-hover);
+    }
+}
+
+.links-footer{
+    color: var(--footer-muted);
+}
+
+footer p {
+    color: var(--footer-muted);
+}
+
+footer ul {
+    list-style: none;
+    color: var(--footer-muted);
+}
+
+footer li {
+    margin: 10px;
+}
+
+.li-title {
+    color: var(--footer-text);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px;
+}

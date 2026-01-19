@@ -3,6 +3,10 @@
     .cards {
         max-height: 52vh;
     }
+
+    .title {
+        font-size: 1em;
+    }
 }
 
 /* Tablet */

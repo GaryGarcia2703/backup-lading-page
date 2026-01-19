@@ -60,3 +60,7 @@ header.scrolled a {
         border-bottom: 1px solid var(--link-hover);
     }
 }
+
+header.scrolled .btn-default:hover {
+    color: var(--white);
+}
