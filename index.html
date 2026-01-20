@@ -13,6 +13,7 @@
     />
 
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/style/cta.css">
     <link rel="stylesheet" href="src/style/transitions.css" />
     <link rel="stylesheet" href="src/style/style.css" />
     <link rel="stylesheet" href="src/style/media-query.css" />
@@ -218,12 +219,21 @@
         <h2 data-aos="fade-up" data-aos-delay="100">Tem duvidas?</h2>
         <p>Faça uma consulta, respondemos em até 15min.</p>
 
-        <a href="/contacto" class="cta-btn" data-aos="fade-up">
+        <button class="cta-btn" id="open-cta">
           Fazer consulta
-        </a>
+        </button>
       </section>
-
     </main>
+
+    <!-- Overlay -->
+    <div id="cta-overlay">
+      <div class="cta-modal">
+        <button class="cta-close" aria-label="Cerrar">✕</button>
+
+        <!-- AQUÍ va tu formulario -->
+        <div class="cta-content" id="cta-placeholder"></div>
+      </div>
+    </div>
 
     <footer>
     <div id="footer-conteiner">
@@ -255,6 +265,22 @@
 
     <script src="src/js/script.js"></script>
     <script src="src/js/transition.js"></script>
+    <script src="src/js/cta.js"></script>
+
+    <!-- SCRIPT PARA FORM CTA-->
+
+    <script>
+      fetch("src/components/cta.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("cta-placeholder").innerHTML = html;
+
+            // Re-inicializa AOS después de cargar el CTA
+            if (window.AOS) {
+              AOS.refresh();
+            }
+        });
+    </script>
 
     <!--SCRIPT PARA ANIMAÇÕES -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
