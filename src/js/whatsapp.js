@@ -1,3 +1,5 @@
+// FUNCIÓN PARA MANDAR DATOS DEL FORM PARA EL NUMERO DE LA EMPRESA
+
 const form = document.getElementById("form-whatsapp");
 
 form.addEventListener("submit", function (e) {
