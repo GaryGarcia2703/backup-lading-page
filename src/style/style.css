@@ -361,6 +361,7 @@ div#steps-conteiner {
 /* botón frutiger aero*/
 
 .cta-btn {
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
