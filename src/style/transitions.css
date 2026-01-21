@@ -26,7 +26,8 @@
     }
 
     #hero-logo {
-        width: 540px;
+        max-width: 540px;
+        width: 100%;
         transition: transform 0.2s linear;
         will-change: transform;
     }
@@ -49,6 +50,10 @@ header.scrolled {
 
 header.scrolled .btn-mobile{
     color: white;
+}
+
+header.scrolled img {
+    
 }
 
 

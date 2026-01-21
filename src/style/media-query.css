@@ -5,8 +5,8 @@
         font-size: 14px; /* base mobile */
     }
 
-    #hero-title {
-        font-size: 0.5em;
+    #hero-logo {
+        width: 20px;
     }
 
     .title {
@@ -115,10 +115,6 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 32px;
-    }
-
-    #footer-conteiner img {
-        width: 64px;
     }
 
     #site {

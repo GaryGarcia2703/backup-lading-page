@@ -97,6 +97,7 @@ header {
 .logo{
     width: 100px;
     height: auto;
+    transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
 /* Lista de links del menú */
@@ -439,7 +440,8 @@ div.footer-columns {
 }
 
 footer img {
-    width: 150px;
+    max-width: 150px;
+    width: 100%;
     margin: 10px;
 }
 
