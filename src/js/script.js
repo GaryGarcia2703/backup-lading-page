@@ -1,3 +1,5 @@
+// ======= funcion para el navbar (menu hamburguesa) =========
+
 const mobileBtn = document.querySelector(".btn-mobile")
 const navLinks = document.querySelector("#nav-links")
 const icon = document.querySelector(".btn-mobile i")

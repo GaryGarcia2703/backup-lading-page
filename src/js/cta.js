@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.overflow = "";
   });
 
+  // ======= CERRAR AL CLICKAR EN OTRO LADO
   overlay.addEventListener("click", (e) => {
     if (e.target === overlay) {
       overlay.classList.remove("show");

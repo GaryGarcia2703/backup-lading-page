@@ -1,21 +1,42 @@
-<section id="cta-consulta">
-  <h2>Tem dúvidas?</h2>
-  <p>Faça uma consulta, respondemos em até 15min.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/cta2.css">
+  <title>Document</title>
+</head>
+<body>
+  <section id="cta-consulta">
+    <h2>Tem dúvidas?</h2>
+    <p>Faça uma consulta, respondemos em até 15min.</p>
+  
+    <form id="form-whatsapp">
+      <div class="coluna">
+        <input type="text" id="nome" placeholder="Seu nome" required />
+        <input type="email" id="email" placeholder="Seu e-mail" required />
+      </div>
 
-  <form id="form-whatsapp">
-    <input type="text" id="nome" placeholder="Seu nome" required />
-    <input type="email" id="email" placeholder="Seu e-mail" required />
-    <input type="tel" id="telefone" placeholder="Seu WhatsApp" required />
+      <div class="coluna">
+        <input type="tel" id="telefone" placeholder="Seu WhatsApp" required />
+        <input type="text" id="empresa" placeholder="Nome da sua empresa" required />
+      </div>
+  
+      <textarea
+        id="mensagem"
+        placeholder="Descreva sua necessidade"
+        rows="4"
+        required
+      ></textarea>
+  
+      <div id="btn-conteiner">
+        <button type="submit" class="cta-btn">
+          Enviar para WhatsApp
+        </button>
+      </div>
+    </form>
+  </section>
 
-    <textarea
-      id="mensagem"
-      placeholder="Descreva sua necessidade"
-      rows="4"
-      required
-    ></textarea>
-
-    <button type="submit" class="cta-btn">
-      Enviar para WhatsApp
-    </button>
-  </form>
-</section>
+  <script src="../js/whatsapp.js"></script>
+</body>
+</html>

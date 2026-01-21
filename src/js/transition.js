@@ -1,3 +1,4 @@
+// ====== animacion para la seccion HERO =======
 const heroContent = document.querySelector('#hero-content');
 
 window.addEventListener('scroll', () => {
