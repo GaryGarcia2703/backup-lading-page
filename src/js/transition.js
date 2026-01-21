@@ -28,11 +28,11 @@ window.addEventListener('scroll', () => {
 const logo = document.getElementById("navbar-logo");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 520) {
-    header.classList.add("scrolled");
-    logo.src = "src/img/logo_blanco.png"; // logo para fundo claro
-  } else {
-    header.classList.remove("scrolled");
-    logo.src = "src/img/logo_azul.png"; // logo original
-  }
+    if (window.scrollY > 520) {
+        header.classList.add("scrolled");
+        logo.src = "src/img/logo_blanco.png"; // logo para fundo claro
+    } else {
+        header.classList.remove("scrolled");
+        logo.src = "src/img/logo_azul.png"; // logo original
+    }
 });
