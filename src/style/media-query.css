@@ -90,6 +90,12 @@
     /* CTA */
     /* ============================= */
 
+    #form-conteiner #cta-consulta {
+        margin: 0;
+        padding: 2rem ;
+
+    }
+
     #cta-consulta {
         margin: 24px 0;
         padding: 24px 16px;
@@ -109,11 +115,11 @@
 
 
     .cta-modal {
-        width: 80%;
+        width: 90%;
     }
 
     input {
-        width: 80%;
+        width: 85%;
     }
 
     .cta-content {
@@ -122,7 +128,6 @@
 
     .cta-btn {
         width: 100%;
-        padding: 22px;
     }
 
 

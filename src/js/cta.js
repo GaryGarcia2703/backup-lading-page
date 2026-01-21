@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.getElementById("cta-overlay");
   const closeBtn = document.querySelector(".cta-close");
 
+  if (!openBtn || !overlay) return;
+
   // ===== ABRIR MODAL =====
   openBtn.addEventListener("click", () => {
     overlay.classList.add("show");
