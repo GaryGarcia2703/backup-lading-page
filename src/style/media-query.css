@@ -34,12 +34,27 @@
     }
 
     #nav-links {
-        width: 100%;
-        left: 0;
-        top: 100%;
-
-        border-radius: 0 0 12px 12px;
+        gap: 15px;
+        transform: translateX(-15px);
+        height: 85vh;
+        width: 90%;
+        left: -15.5px;
+        top: 120%;
+        border-radius: 8px;
     }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        padding: 12px 16px;
+        border-radius: 8px;
+
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
 
     #nav-links li a {
         display: block;
@@ -47,7 +62,7 @@
         padding: 14px 0;
 
         font-size: 0.95rem;
-        text-align: center;
+        text-align: left;
     }
 
     /* ============================= */

@@ -68,28 +68,32 @@
   width: 100%;
   border-radius: 8px;
   padding: 10px;
+  padding-left: 36px;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.436);
 }
 
 /* icones */
 
 .input-icon {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-
+  position: relative;
   width: 100%;
 }
 
 .input-icon i {
-  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  font-size: 16px;
   color: var(--secondary);
-  min-width: 20px; /* mantém alinhamento */
+  pointer-events: none;
 }
 
 .input-icon input,
 .input-icon textarea {
-  flex: 1;
+  width: 100%;
+  padding: 12px 12px 12px 42px;
+  border-radius: 8px;
 }
 
 
