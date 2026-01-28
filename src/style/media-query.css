@@ -10,7 +10,7 @@
     }
 
     .title {
-        font-size: 1.1rem;
+        font-size: 15px;
     }
 
     #cta-consulta h2 {
@@ -73,9 +73,7 @@
         padding: 16px 4%;
     }
 
-    #vantagens-title,
-    #diferenciais-title,
-    #como-funciona-title {
+    .cards-container {
         padding: 48px 6%;
     }
 
@@ -95,10 +93,16 @@
         font-size: 1rem;
     }
 
-    #vantagens-cards-conteiner,
-    #diferenciais-cards-conteiner,
-    #steps-conteiner {
+    .cards-container {
         flex-direction: column;
+    }
+
+    div.plano-box {
+        width: 85%;
+    }
+
+    div#cta-conteiner-plano {
+        background-color: red;
     }
 
     /* ============================= */

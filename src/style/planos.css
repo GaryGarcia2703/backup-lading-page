@@ -40,8 +40,8 @@
 .plano-box {
   position: relative;
   background: #fff;
-  width: 90%;
-  max-width: 420px;
+  width: 100%;
+  max-width: 620px;
   padding: 32px;
   border-radius: 16px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
@@ -58,6 +58,7 @@
 #plano-modal.show .plano-box {
   transform: translateY(0) scale(1);
   opacity: 1;
+  opacity: 10;
 }
 
 
@@ -84,3 +85,25 @@
   flex-direction: column;
   gap: 12px;
 }
+
+ul#plano-beneficios {
+  list-style: none;
+}
+
+li {
+  text-align: start;
+}
+
+div#cta-conteiner-plano {
+  margin: 10px;
+  display: flex;
+  justify-content: center
+}
+
+#cta-plano {
+  text-align: center;
+  padding: 10px;
+  max-width: 250px;
+  width: 100%;
+}
+

@@ -89,7 +89,7 @@
         </section>
 
         <!--Cards-->
-        <div id="vantagens-cards-conteiner">
+        <div id="vantagens-cards-conteiner" class="cards-container">
           <section class="card" data-aos="fade-up">
             <i class="fa-solid fa-fingerprint card-icon"></i>
 
@@ -108,7 +108,7 @@
             <h2 data-aos="fade-up" data-aos-delay="100">Recuperação rápida e sem complicações</h2>
 
             <p data-aos="fade-up" data-aos-delay="150">
-              Em caso de imprevistos, restauramos seus arquivos rapidamente para que sua operação continue sem interrupções.
+              Em situações críticas, restauramos seus dados de forma ágil e segura, minimizando o tempo de parada e garantindo que sua empresa volte a operar o quanto antes.
             </p>
           </section>
 
@@ -136,7 +136,7 @@
           </p>
         </div>
 
-        <div id="diferenciais-cards-conteiner">
+        <div id="diferenciais-cards-conteiner" class="cards-container">
 
           <section class="card diferenciais-card " data-aos="fade-up">
             <i class="fa-solid fa-eye card-icon"></i>
@@ -181,7 +181,7 @@
           </p>
         </div>
 
-        <div id="steps-conteiner">
+        <div id="steps-conteiner" class="cards-container">
 
           <section class="card step-card" data-aos="fade-up">
             <i class="fa-solid fa-cloud-arrow-up card-icon"></i>
@@ -217,11 +217,11 @@
       </section>
 
       
-      <!-- PLANOS -->
+      <!-- PLANOS --> 
 <section id="planos-conteiner">
 
   <!-- Título -->
-  <section class="title" id="planos-title" data-aos="fade-up">
+  <section class="title" id="planos-title" data-aos="fade-right">
     <h1>Planos de Backup Empresarial</h1>
     <p>
       Escolha o plano ideal de acordo com o volume de dados e o nível de proteção
@@ -230,15 +230,15 @@
   </section>
 
   <!-- Cards dos planos -->
-  <section id="planos-cards-conteiner">
+  <section id="planos-cards-conteiner" class="cards-container">
 
     <!-- Plano Básico -->
-    <section class="card plano-card" data-plano="basico" data-aos="fade-up">
+    <section class="card plano-card" data-plano="basico" data-aos="fade-right">
       <i class="fa-solid fa-shield card-icon"></i>
 
-      <h2 data-aos="fade-up" data-aos-delay="100">Plano Básico</h2>
+      <h2 data-aos="fade-right" data-aos-delay="100">Plano Básico</h2>
 
-      <p data-aos="fade-up" data-aos-delay="150">
+      <p data-aos="fade-right" data-aos-delay="150">
         Backup automático para dados essenciais, com armazenamento seguro
         e recuperação sob demanda.
       </p>
@@ -253,12 +253,12 @@
     </section>
 
     <!-- Plano Profissional -->
-    <section class="card plano-card destaque"  data-plano="profissional" data-aos="fade-up" data-aos-delay="100">
+    <section class="card plano-card destaque"  data-plano="profissional" data-aos="fade-right" data-aos-delay="100">
       <i class="fa-solid fa-bolt card-icon"></i>
 
-      <h2 data-aos="fade-up" data-aos-delay="100">Plano Profissional</h2>
+      <h2 data-aos="fade-right" data-aos-delay="100">Plano Profissional</h2>
 
-      <p data-aos="fade-up" data-aos-delay="150">
+      <p data-aos="fade-right" data-aos-delay="150">
         Proteção completa com maior frequência de backup
         e suporte técnico prioritário.
       </p>
@@ -274,12 +274,12 @@
     </section>
 
     <!-- Plano Avançado -->
-    <section class="card plano-card" data-plano="avancado" data-aos="fade-up" data-aos-delay="150">
+    <section class="card plano-card" data-plano="avancado" data-aos="fade-right" data-aos-delay="150">
       <i class="fa-solid fa-server card-icon"></i>
 
-      <h2 data-aos="fade-up" data-aos-delay="100">Plano Avançado</h2>
+      <h2 data-aos="fade-right" data-aos-delay="100">Plano Avançado</h2>
 
-      <p data-aos="fade-up" data-aos-delay="150">
+      <p data-aos="fade-right" data-aos-delay="150">
         Máximo nível de segurança, monitoramento contínuo
         e recuperação imediata de dados.
       </p>
@@ -300,7 +300,7 @@
 
       <!-- CALL TO ACTION CONSULTA -->
       <div id="cta-conteiner">
-        <section id="cta-consulta" class="cta-landing" data-aos="fade-up">
+        <section id="cta-consulta" class="cta-landing" data-aos="fade-right">
           <h2>Tem dúvidas?</h2>
 
           <p>Faça uma consulta, respondemos em até 15min.</p>
@@ -317,16 +317,19 @@
     <div id="plano-overlay" class="hidden"></div>
 
       <div id="plano-modal" class="hidden">
-      <div class="plano-box">
+      <div class="plano-box" >
         <button id="plano-close">✕</button>
 
         <h3 id="plano-titulo"></h3>
 
         <ul id="plano-beneficios"></ul>
 
-        <a href="#cta-consulta" class="btn btn-default cta-plano">
-          Não sabe qual plano escolher? Fale com um especialista e receba uma recomendação personalizada.
-        </a>
+        <p>Não sabe qual plano escolher?</p>
+        <div id="cta-conteiner-plano">
+          <a href="#cta-consulta" id="cta-plano" class="btn btn-default cta-plano">
+          Fale com um especialista
+          </a>
+        </div>
       </div>
     </div>
 

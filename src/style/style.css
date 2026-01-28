@@ -188,16 +188,24 @@ section {
 /* ============================= */
 
 /* Estilo base de las cards */
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    align-items: stretch; 
+}
+
 .card {
+    flex: 1; /* todas ocupam a mesma largura */
     background-color: var(--primary-light);
-    max-width: 75vw;
-    width: auto;
-    min-height: 160px;
-    height: auto;
-    padding: 1rem;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 🔥 ISSO resolve os ícones */
 
     text-align: center;
-    padding: 20px;
+
     margin-top: 20px;
 
     border-radius: 8px;
@@ -212,6 +220,7 @@ section {
 
     /* Texto interno de la card */
     p {
+        flex-grow: 1;
         margin-top: 15px;
         color: var(--text-secondary);
         font-size: 1.2em;
@@ -278,7 +287,6 @@ section {
     display: flex;
     gap: 20px;
     align-items: center;
-    flex-direction: column;
 }
 
 /* ============================= */
@@ -307,7 +315,6 @@ section {
     display: flex;
     gap: 20px;
     align-items: center;
-    flex-direction: column;
 }
 
 /* ============================= */
@@ -337,7 +344,7 @@ div#steps-conteiner {
     display: flex;
     gap: 20px;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
 }
 
 /* item flex */
@@ -456,14 +463,32 @@ div#cta-conteiner {
 /* Sección delos planes */
 /* ============================= */
 
+#plano-titulo {
+    text-align: center;
+}
+
+section#planos-conteiner{
+    text-align: center;
+    padding: 20px 4%;
+    margin-top: 10px;
+}
+
 section#planos-title {
     text-align: center;
+    padding: 80px 6.5%;
+    border-radius: 10px;
+    background-image: linear-gradient(var(--white)20% , var(--bg-soft-2));
 }
 
 section#planos-cards-conteiner {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 50px;
+}
+
+ul.plano-list {
+    list-style: none;
 }
 
 

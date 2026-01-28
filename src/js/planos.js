@@ -66,6 +66,13 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.overflow = "";
   }
 
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("show");
+      document.body.style.overflow = "";
+    }
+  });
+
   closeBtn.addEventListener("click", fecharModal);
   overlay.addEventListener("click", fecharModal);
 
