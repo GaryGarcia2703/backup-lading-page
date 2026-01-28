@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="src/style/transitions.css" />
     <link rel="stylesheet" href="src/style/style.css" />
     <link rel="stylesheet" href="src/style/media-query.css" />
+    <link rel="stylesheet" href="src/style/planos.css">
+    
 
     <!--icon-->
     <link rel="shortcut icon" href="src/icons/icon_blanco.png" type="image/x-icon">
@@ -45,22 +47,22 @@
         <ul id="nav-links">
           <li class="nav-item">
             <i class="fa-solid fa-bolt"></i>
-            <a href="#vantagens-conteiner">Vantagens</a>
+            <a href="#vantagens-conteiner" class="links-ul-nav">Vantagens</a>
           </li>
 
           <li class="nav-item">
             <i class="fa-solid fa-gem"></i>
-            <a href="#diferenciais-conteiner">Diferenciais</a>
+            <a href="#diferenciais-conteiner" class="links-ul-nav">Diferenciais</a>
           </li>
 
           <li class="nav-item">
             <i class="fa-solid fa-layer-group"></i>
-            <a href="#planos">Planos</a>
+            <a href="#planos-conteiner" class="links-ul-nav">Planos</a>
           </li>
 
           <li class="nav-item">
             <i class="fa-solid fa-comments"></i>
-            <a href="#cta-consulta">Realizar uma consulta</a>
+            <a href="#cta-consulta" class="links-ul-nav">Realizar uma consulta</a>
           </li>
         </ul>
 
@@ -214,6 +216,87 @@
         </div>
       </section>
 
+      
+      <!-- PLANOS -->
+<section id="planos-conteiner">
+
+  <!-- Título -->
+  <section class="title" data-aos="fade-up">
+    <h1>Planos de Backup Empresarial</h1>
+    <p>
+      Escolha o plano ideal de acordo com o volume de dados e o nível de proteção
+      que sua empresa necessita.
+    </p>
+  </section>
+
+  <!-- Cards dos planos -->
+  <section id="planos-cards-conteiner">
+
+    <!-- Plano Básico -->
+    <section class="card plano-card" data-plano="basico" data-aos="fade-up">
+      <i class="fa-solid fa-shield card-icon"></i>
+
+      <h2 data-aos="fade-up" data-aos-delay="100">Plano Básico</h2>
+
+      <p data-aos="fade-up" data-aos-delay="150">
+        Backup automático para dados essenciais, com armazenamento seguro
+        e recuperação sob demanda.
+      </p>
+
+      <ul class="plano-list">
+        <li>Backup automático diário</li>
+        <li>Armazenamento em nuvem criptografado</li>
+        <li>Retenção de dados por período definido</li>
+        <li>Recuperação manual sob solicitação</li>
+        <li>Suporte em horário comercial</li>
+      </ul>
+    </section>
+
+    <!-- Plano Profissional -->
+    <section class="card plano-card destaque"  data-plano="profissional" data-aos="fade-up" data-aos-delay="100">
+      <i class="fa-solid fa-bolt card-icon"></i>
+
+      <h2 data-aos="fade-up" data-aos-delay="100">Plano Profissional</h2>
+
+      <p data-aos="fade-up" data-aos-delay="150">
+        Proteção completa com maior frequência de backup
+        e suporte técnico prioritário.
+      </p>
+
+      <ul class="plano-list">
+        <li>Backup automático diário ou incremental</li>
+        <li>Armazenamento em nuvem criptografado</li>
+        <li>Retenção de dados estendida</li>
+        <li>Recuperação rápida com menor tempo de resposta</li>
+        <li>Monitoramento básico dos backups</li>
+        <li>Suporte técnico prioritário</li>
+      </ul>
+    </section>
+
+    <!-- Plano Avançado -->
+    <section class="card plano-card" data-plano="avancado" data-aos="fade-up" data-aos-delay="150">
+      <i class="fa-solid fa-server card-icon"></i>
+
+      <h2 data-aos="fade-up" data-aos-delay="100">Plano Avançado</h2>
+
+      <p data-aos="fade-up" data-aos-delay="150">
+        Máximo nível de segurança, monitoramento contínuo
+        e recuperação imediata de dados.
+      </p>
+
+      <ul class="plano-list">
+        <li>Backup automático em múltiplos horários</li>
+        <li>Armazenamento redundante e seguro</li>
+        <li>Retenção de dados personalizada</li>
+        <li>Monitoramento contínuo dos backups</li>
+        <li>Recuperação imediata em caso de falha</li>
+        <li>Suporte técnico especializado</li>
+      </ul>
+    </section>
+
+  </section>
+
+</section>
 
       <!-- CALL TO ACTION CONSULTA -->
       <div id="cta-conteiner">
@@ -231,6 +314,23 @@
 
     </main>
 
+    <div id="plano-overlay" class="hidden"></div>
+
+      <div id="plano-modal" class="hidden">
+      <div class="plano-box">
+        <button id="plano-close">✕</button>
+
+        <h3 id="plano-titulo"></h3>
+
+        <ul id="plano-beneficios"></ul>
+
+        <a href="#cta-consulta" class="btn btn-default cta-plano">
+          Não sabe qual plano escolher? Fale com um especialista e receba uma recomendação personalizada.
+        </a>
+      </div>
+    </div>
+
+
     <!-- Overlay -->
     <div id="cta-overlay">
       <div class="cta-modal">
@@ -240,6 +340,8 @@
         <div class="cta-content" id="cta-placeholder"></div>
       </div>
     </div>
+
+    
 
     <footer>
     <div id="footer-conteiner">
@@ -273,33 +375,34 @@
     <script src="src/js/transition.js"></script>
     <script src="src/js/cta.js"></script>
     <script src="src/js/whatsapp.js"></script>
+    <script src="src/js/planos.js"></script>
 
     <!-- ===============================
     =========SCRIPT PARA FORM CTA========
     =================================-->
     <script>
-  fetch("src/components/cta.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("cta-placeholder").innerHTML = html;
+      fetch("src/components/cta.html")
+        .then(res => res.text())
+        .then(html => {
+        document.getElementById("cta-placeholder").innerHTML = html;
 
-      // AGORA o formulário existe
-      const form = document.getElementById("form-whatsapp");
+        // AGORA o formulário existe
+        const form = document.getElementById("form-whatsapp");
 
-      if (!form) {
-        console.error("Formulário não encontrado");
-        return;
-      }
+        if (!form) {
+          console.error("Formulário não encontrado");
+          return;
+        }
 
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
 
-        const nome = document.getElementById("nome").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const telefone = document.getElementById("telefone").value.trim();
-        const mensagem = document.getElementById("mensagem").value.trim();
+          const nome = document.getElementById("nome").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const telefone = document.getElementById("telefone").value.trim();
+          const mensagem = document.getElementById("mensagem").value.trim();
 
-        const numeroEmpresa = "554792707304"; 
+          const numeroEmpresa = "554792707304"; 
 
       const texto = `
 Nova consulta pelo site
