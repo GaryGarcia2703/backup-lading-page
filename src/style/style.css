@@ -451,6 +451,22 @@ div#cta-conteiner {
   transform: translateY(1px);
 }
 
+
+/* ============================= */
+/* Sección delos planes */
+/* ============================= */
+
+section#planos-title {
+    text-align: center;
+}
+
+section#planos-cards-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* Footer */
 
 footer {
