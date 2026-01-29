@@ -43,26 +43,39 @@
   background: #fff;
   width: 100%;
   max-width: 620px;
-  padding: 32px;
+  /* CAMBIO: Eliminamos el padding global (era 32px) */
+  padding: 0; 
   border-radius: 16px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-
   text-align: center;
+  /* CAMBIO: Evita que el fondo del título se salga de las esquinas redondeadas */
+  overflow: hidden; 
 
   transform: translateY(20px) scale(0.96);
   opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
+#plano-title-container{
+  width: 100%;
+  height: auto; 
+  background-color: var(--bg-soft-2); /* Tu color azul */
+  padding: 40px 0; /* Espacio arriba y abajo del texto */
+  margin-bottom: 24px;
 }
 
 .plano-box h3 {
-  background-color: var(--bg-soft-2);
-  padding: 10px 0px;
-  border-radius: 999px;
-  font: 600;
+  margin: 0;
+  font-weight: 600;
   font-size: 1.5em;
+  color: #141414; /* Ajusta según tu diseño */
+}
+
+#plano-beneficios, 
+.plano-box p, 
+#cta-conteiner-plano {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 /* quando modal estiver visível */
@@ -75,12 +88,14 @@
 
 #plano-close {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
   background: none;
   border: none;
   font-size: 22px;
   cursor: pointer;
+  color: #666;
 }
 #plano-modal:not(.hidden) {
   display: flex;
@@ -101,16 +116,22 @@ ul#plano-beneficios {
   list-style: none;
 }
 
-
-
 li {
   text-align: start;
   line-height: 1.5;
 }
 
+li.vantagem i{
+  color:#1eaf53;
+}
 
+li.diferencial i{
+  color: #2565ca;
+}
 
-
+span {
+  padding-left: 1.5em;
+}
 
 div#cta-conteiner-plano {
   margin: 10px;
@@ -119,10 +140,11 @@ div#cta-conteiner-plano {
 }
 
 #cta-plano {
+  color: white;
   display: block;
   text-align: center;
   padding: 10px;
-  max-width: 250px;
+  max-width: 550px;
   width: 100%;
 }
 
