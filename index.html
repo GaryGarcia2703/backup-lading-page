@@ -1,365 +1,364 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="src/style/cta.css">
-    <link rel="stylesheet" href="src/style/cta2.css">
-    <link rel="stylesheet" href="src/style/transitions.css" />
-    <link rel="stylesheet" href="src/style/style.css" />
-    <link rel="stylesheet" href="src/style/media-query.css" />
-    <link rel="stylesheet" href="src/style/planos.css">
-    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!--icon-->
-    <link rel="shortcut icon" href="src/icons/icon_blanco.png" type="image/x-icon">
-    <title>B&R soluções</title>
-    <meta
-      name="description"
-      content="Soluções profissionais em backup e proteção de dados para empresas. Segurança, confiabilidade e suporte especializado."
-    />
-  </head>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/style/cta.css">
+  <link rel="stylesheet" href="src/style/cta2.css">
+  <link rel="stylesheet" href="src/style/transitions.css" />
+  <link rel="stylesheet" href="src/style/style.css" />
+  <link rel="stylesheet" href="src/style/media-query.css" />
+  <link rel="stylesheet" href="src/style/planos.css">
 
-  <body>
-    <!-- NAVBAR -->
-    <header>
-      <nav class="navbar">
-        <div id="container-logo">
-          <a href="#hero">
-            <img src="src/img/logo_azul.png" class="logo" id="navbar-logo" alt="Logotipo da B&R Soluções" />
-          </a>
-        </div>
 
-        <button class="btn btn-mobile" aria-label="Abrir menu">
-          <i class="fa-solid fa-bars"></i>
+  <!--icon-->
+  <link rel="shortcut icon" href="src/icons/icon_blanco.png" type="image/x-icon">
+  <title>B&R soluções</title>
+  <meta name="description"
+    content="Soluções profissionais em backup e proteção de dados para empresas. Segurança, confiabilidade e suporte especializado." />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div id="container-logo">
+        <a href="#hero">
+          <img src="src/img/logo_azul.png" class="logo" id="navbar-logo" alt="Logotipo da B&R Soluções" />
+        </a>
+      </div>
+
+      <button class="btn btn-mobile" aria-label="Abrir menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul id="nav-links">
+        <li class="nav-item">
+          <i class="fa-solid fa-bolt"></i>
+          <a href="#vantagens-conteiner" class="links-ul-nav">Vantagens</a>
+        </li>
+
+        <li class="nav-item">
+          <i class="fa-solid fa-gem"></i>
+          <a href="#diferenciais-conteiner" class="links-ul-nav">Diferenciais</a>
+        </li>
+
+        <li class="nav-item">
+          <i class="fa-solid fa-layer-group"></i>
+          <a href="#planos-conteiner" class="links-ul-nav">Planos</a>
+        </li>
+
+        <li class="nav-item">
+          <i class="fa-solid fa-comments"></i>
+          <a href="#cta-consulta" class="links-ul-nav">Realizar uma consulta</a>
+        </li>
+      </ul>
+
+      <a href="#contato" class="btn btn-default">Solicite uma avaliação gratuita </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero">
+      <div id="hero-content">
+        <img src="src/img/logo_blanco.png" id="hero-logo" alt="logo da empresa" />
+      </div>
+    </section>
+
+    <!-- Vantagens do servico -->
+    <section id="vantagens-conteiner">
+      <section id="vantagens-title" class="title" data-aos="fade-up">
+        <h1>Muito mais do que armazenar arquivos. Nosso serviço garante continuidade, segurança e tranquilidade para sua
+          empresa.</h1>
+        <p>
+          Resultados reais que o nosso serviço de backup entrega para o seu
+          negócio:
+        </p>
+      </section>
+
+      <!--Cards-->
+      <div id="vantagens-cards-conteiner" class="cards-container">
+        <section class="card" data-aos="fade-up">
+          <i class="fa-solid fa-fingerprint card-icon"></i>
+
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            Proteção total contra perdas de dados
+          </h2>
+
+          <p data-aos="fade-up" data-aos-delay="150">
+            Evite prejuízos causados por falhas humanas, ataques virtuais ou problemas de hardware. Seus dados ficam
+            sempre seguros e disponíveis.
+          </p>
+        </section>
+
+        <section class="card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fa-solid fa-server card-icon"></i>
+
+          <h2 data-aos="fade-up" data-aos-delay="100">Recuperação rápida e sem complicações</h2>
+
+          <p data-aos="fade-up" data-aos-delay="150">
+            Em situações críticas, restauramos seus dados de forma ágil e segura, minimizando o tempo de parada e
+            garantindo que sua empresa volte a operar o quanto antes.
+          </p>
+        </section>
+
+        <section class="card" data-aos="fade-up" data-aos-delay="150">
+          <i class="fa-solid fa-shield-halved card-icon"></i>
+
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            Segurança que você pode confiar
+          </h2>
+
+          <p data-aos="fade-up" data-aos-delay="150">
+            Utilizamos tecnologias modernas de criptografia e armazenamento seguro para proteger informações sensíveis
+            do seu negócio.
+          </p>
+        </section>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section id="diferenciais-conteiner">
+      <div id="diferenciais-title" class="title" data-aos="fade-up">
+        <h1>O que nos torna a escolha certa para sua empresa</h1>
+        <p>
+          Mais do que backup, oferecemos um serviço completo pensado para empresas que valorizam
+          segurança e confiabilidade.
+        </p>
+      </div>
+
+      <div id="diferenciais-cards-conteiner" class="cards-container">
+
+        <section class="card diferenciais-card " data-aos="fade-up">
+          <i class="fa-solid fa-eye card-icon"></i>
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            Monitoramento contínuo dos backups
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="150">
+            Acompanhamos diariamente o status dos seus backups para garantir que tudo esteja funcionando corretamente.
+          </p>
+        </section>
+
+        <section class="card diferenciais-card" data-aos="fade-up">
+          <i class="fa-solid fa-gears card-icon"></i>
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            Soluções sob medida para o seu negócio
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="150">
+            Cada empresa é única. Por isso, adaptamos o serviço às suas necessidades reais.
+          </p>
+        </section>
+
+        <section class="card diferenciais-card" data-aos="fade-up">
+          <i class="fa-solid fa-headset card-icon"></i>
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            Suporte técnico especializado
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="150">
+            Conte com uma equipe pronta para ajudar sempre que precisar, com atendimento rápido e eficiente.
+          </p>
+        </section>
+
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section id="como-funciona">
+
+      <div class="title" id="como-funciona-title" data-aos="fade-up">
+        <h1>Um processo simples, seguro e eficiente</h1>
+        <p data-aos="fade-up" data-aos-delay="150">
+          Cuidamos de tudo para que você não precise se preocupar com seus dados.
+        </p>
+      </div>
+
+      <div id="steps-conteiner" class="cards-container">
+
+        <section class="card step-card" data-aos="fade-up">
+          <i class="fa-solid fa-cloud-arrow-up card-icon"></i>
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            1. Backup automático
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="150">
+            Seus dados são copiados automaticamente em intervalos programados, sem interferir na sua rotina.
+          </p>
+        </section>
+
+        <section class="card step-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fa-solid fa-lock card-icon"></i>
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            2. Armazenamento seguro
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="150">
+            Os arquivos são protegidos com criptografia e armazenados em ambientes seguros.
+          </p>
+        </section>
+
+        <section class="card step-card" data-aos="fade-up" data-aos-delay="150">
+          <i class="fa-solid fa-rotate card-icon"></i>
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            3. Recuperação fácil
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="150">
+            Sempre que precisar, seus dados podem ser restaurados de forma simples e rápida.
+          </p>
+        </section>
+
+      </div>
+    </section>
+
+
+    <!-- PLANOS -->
+    <section id="planos-conteiner">
+
+      <!-- Título -->
+      <section class="title" id="planos-title" data-aos="fade-right">
+        <h1>Planos de Backup Empresarial</h1>
+        <p>
+          Escolha o plano ideal de acordo com o volume de dados e o nível de proteção
+          que sua empresa necessita.
+        </p>
+      </section>
+
+      <!-- Cards dos planos -->
+      <section id="planos-cards-conteiner" class="cards-container">
+
+        <!-- Plano Básico -->
+        <section class="card plano-card" data-plano="basico" data-aos="fade-right">
+          <i class="fa-solid fa-shield card-icon"></i>
+
+          <h2 data-aos="fade-right" data-aos-delay="100">Plano Básico</h2>
+
+          <p data-aos="fade-right" data-aos-delay="150">
+            Backup automático para dados essenciais, com armazenamento seguro
+            e recuperação sob demanda.
+          </p>
+
+          <ul class="plano-list">
+            <li>Backup automático diário</li>
+            <li>Armazenamento em nuvem criptografado</li>
+            <li>Retenção de dados por período definido</li>
+            <li>Recuperação manual sob solicitação</li>
+            <li>Suporte em horário comercial</li>
+          </ul>
+
+          <div class="btn-plano-div">
+            <button class="btn btn-plano">Começar Agora</button>
+          </div>
+        </section>
+
+        <!-- Plano Profissional -->
+        <section class="card plano-card destaque" data-plano="profissional" data-aos="fade-right" data-aos-delay="100">
+          <i class="fa-solid fa-bolt card-icon"></i>
+
+          <h2 data-aos="fade-right" data-aos-delay="100">Plano Profissional</h2>
+
+          <p data-aos="fade-right" data-aos-delay="150">
+            Proteção completa com maior frequência de backup
+            e suporte técnico prioritário.
+          </p>
+
+          <ul class="plano-list">
+            <li>Backup automático diário ou incremental</li>
+            <li>Armazenamento em nuvem criptografado</li>
+            <li>Retenção de dados estendida</li>
+            <li>Recuperação rápida com menor tempo de resposta</li>
+            <li>Monitoramento básico dos backups</li>
+            <li>Suporte técnico prioritário</li>
+          </ul>
+
+          <div class="btn-plano-div">
+            <button class="btn btn-plano">Começar Agora</button>
+          </div>
+        </section>
+
+        <!-- Plano Avançado -->
+        <section class="card plano-card" data-plano="avancado" data-aos="fade-right" data-aos-delay="150">
+          <i class="fa-solid fa-server card-icon"></i>
+
+          <h2 data-aos="fade-right" data-aos-delay="100">Plano Avançado</h2>
+
+          <p data-aos="fade-right" data-aos-delay="150">
+            Máximo nível de segurança, monitoramento contínuo
+            e recuperação imediata de dados.
+          </p>
+
+          <ul class="plano-list">
+            <li>Backup automático em múltiplos horários</li>
+            <li>Armazenamento redundante e seguro</li>
+            <li>Retenção de dados personalizada</li>
+            <li>Monitoramento contínuo dos backups</li>
+            <li>Recuperação imediata em caso de falha</li>
+            <li>Suporte técnico especializado</li>
+          </ul>
+
+          <div class="btn-plano-div">
+            <button class="btn btn-plano">Começar Agora</button>
+          </div>
+        </section>
+
+
+      </section>
+
+    </section>
+
+    <!-- CALL TO ACTION CONSULTA -->
+    <div id="cta-conteiner">
+      <section id="cta-consulta" class="cta-landing" data-aos="fade-right">
+        <h2>Tem dúvidas?</h2>
+
+        <p>Faça uma consulta, respondemos em até 15min.</p>
+
+        <button class="cta-btn" id="open-cta">
+          Fazer consulta
         </button>
 
-        <ul id="nav-links">
-          <li class="nav-item">
-            <i class="fa-solid fa-bolt"></i>
-            <a href="#vantagens-conteiner" class="links-ul-nav">Vantagens</a>
-          </li>
-
-          <li class="nav-item">
-            <i class="fa-solid fa-gem"></i>
-            <a href="#diferenciais-conteiner" class="links-ul-nav">Diferenciais</a>
-          </li>
-
-          <li class="nav-item">
-            <i class="fa-solid fa-layer-group"></i>
-            <a href="#planos-conteiner" class="links-ul-nav">Planos</a>
-          </li>
-
-          <li class="nav-item">
-            <i class="fa-solid fa-comments"></i>
-            <a href="#cta-consulta" class="links-ul-nav">Realizar uma consulta</a>
-          </li>
-        </ul>
-
-        <a href="#contato" class="btn btn-default">Solicite uma avaliação gratuita </a>
-      </nav>
-    </header>
-
-    <main>
-      <!-- HERO -->
-      <section id="hero">
-        <div id="hero-content">
-          <img src="src/img/logo_blanco.png" id="hero-logo" alt="logo da empresa" />
-        </div>
       </section>
+    </div>
 
-      <!-- Vantagens do servico -->
-      <section id="vantagens-conteiner">
-        <section id="vantagens-title" class="title" data-aos="fade-up">
-          <h1>Muito mais do que armazenar arquivos. Nosso serviço garante continuidade, segurança e tranquilidade para sua empresa.</h1>
-          <p>
-            Resultados reais que o nosso serviço de backup entrega para o seu
-            negócio:
-          </p>
-        </section>
+  </main>
 
-        <!--Cards-->
-        <div id="vantagens-cards-conteiner" class="cards-container">
-          <section class="card" data-aos="fade-up">
-            <i class="fa-solid fa-fingerprint card-icon"></i>
+  <div id="plano-overlay" class="hidden"></div>
 
-            <h2 data-aos="fade-up" data-aos-delay="100">
-              Proteção total contra perdas de dados
-            </h2>
+  <div id="plano-modal" class="hidden">
+    <div class="plano-box">
+      <button id="plano-close">✕</button>
 
-            <p data-aos="fade-up" data-aos-delay="150">
-              Evite prejuízos causados por falhas humanas, ataques virtuais ou problemas de hardware. Seus dados ficam sempre seguros e disponíveis.
-            </p>
-          </section>
+      <h3 id="plano-titulo"></h3>
 
-          <section class="card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fa-solid fa-server card-icon"></i>
+      <ul id="plano-beneficios"></ul>
 
-            <h2 data-aos="fade-up" data-aos-delay="100">Recuperação rápida e sem complicações</h2>
-
-            <p data-aos="fade-up" data-aos-delay="150">
-              Em situações críticas, restauramos seus dados de forma ágil e segura, minimizando o tempo de parada e garantindo que sua empresa volte a operar o quanto antes.
-            </p>
-          </section>
-
-          <section class="card" data-aos="fade-up" data-aos-delay="150">
-            <i class="fa-solid fa-shield-halved card-icon"></i>
-
-            <h2 data-aos="fade-up" data-aos-delay="100">
-              Segurança que você pode confiar
-            </h2>
-
-            <p data-aos="fade-up" data-aos-delay="150">
-              Utilizamos tecnologias modernas de criptografia e armazenamento seguro para proteger informações sensíveis do seu negócio.
-            </p>
-          </section>
-        </div>
-      </section>
-
-      <!-- DIFERENCIAIS -->
-      <section id="diferenciais-conteiner">
-        <div id="diferenciais-title" class="title" data-aos="fade-up">
-          <h1>O que nos torna a escolha certa para sua empresa</h1>
-          <p>
-            Mais do que backup, oferecemos um serviço completo pensado para empresas que valorizam 
-            segurança e confiabilidade.
-          </p>
-        </div>
-
-        <div id="diferenciais-cards-conteiner" class="cards-container">
-
-          <section class="card diferenciais-card " data-aos="fade-up">
-            <i class="fa-solid fa-eye card-icon"></i>
-            <h2 data-aos="fade-up" data-aos-delay="100">
-              Monitoramento contínuo dos backups
-            </h2>
-            <p data-aos="fade-up" data-aos-delay="150">
-              Acompanhamos diariamente o status dos seus backups para garantir que tudo esteja funcionando corretamente.
-            </p>
-          </section>
-
-          <section class="card diferenciais-card" data-aos="fade-up">
-            <i class="fa-solid fa-gears card-icon"></i>
-            <h2 data-aos="fade-up" data-aos-delay="100">
-              Soluções sob medida para o seu negócio
-            </h2>
-            <p data-aos="fade-up" data-aos-delay="150">
-              Cada empresa é única. Por isso, adaptamos o serviço às suas necessidades reais.
-            </p>
-          </section>
-
-          <section class="card diferenciais-card" data-aos="fade-up">
-            <i class="fa-solid fa-headset card-icon"></i>
-            <h2 data-aos="fade-up" data-aos-delay="100">
-              Suporte técnico especializado
-            </h2>
-            <p data-aos="fade-up" data-aos-delay="150">
-              Conte com uma equipe pronta para ajudar sempre que precisar, com atendimento rápido e eficiente.
-            </p>
-          </section>
-
-        </div>
-      </section>
-
-      <!-- COMO FUNCIONA -->
-      <section id="como-funciona">
-
-        <div class="title" id="como-funciona-title" data-aos="fade-up">
-          <h1>Um processo simples, seguro e eficiente</h1>
-          <p data-aos="fade-up" data-aos-delay="150">
-            Cuidamos de tudo para que você não precise se preocupar com seus dados.
-          </p>
-        </div>
-
-        <div id="steps-conteiner" class="cards-container">
-
-          <section class="card step-card" data-aos="fade-up">
-            <i class="fa-solid fa-cloud-arrow-up card-icon"></i>
-            <h2 data-aos="fade-up" data-aos-delay="100">
-              1. Backup automático
-            </h2>
-            <p data-aos="fade-up" data-aos-delay="150">
-              Seus dados são copiados automaticamente em intervalos programados, sem interferir na sua rotina.
-            </p>
-          </section>
-
-          <section class="card step-card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fa-solid fa-lock card-icon"></i>
-            <h2 data-aos="fade-up" data-aos-delay="100">
-              2. Armazenamento seguro
-            </h2>
-            <p data-aos="fade-up" data-aos-delay="150">
-              Os arquivos são protegidos com criptografia e armazenados em ambientes seguros.
-            </p>
-          </section>
-
-          <section class="card step-card" data-aos="fade-up" data-aos-delay="150">
-            <i class="fa-solid fa-rotate card-icon"></i>
-            <h2 data-aos="fade-up" data-aos-delay="100">
-              3. Recuperação fácil
-            </h2>
-            <p data-aos="fade-up" data-aos-delay="150">
-              Sempre que precisar, seus dados podem ser restaurados de forma simples e rápida.
-            </p>
-          </section>
-
-        </div>
-      </section>
-
-      
-      <!-- PLANOS --> 
-<section id="planos-conteiner">
-
-  <!-- Título -->
-  <section class="title" id="planos-title" data-aos="fade-right">
-    <h1>Planos de Backup Empresarial</h1>
-    <p>
-      Escolha o plano ideal de acordo com o volume de dados e o nível de proteção
-      que sua empresa necessita.
-    </p>
-  </section>
-
-  <!-- Cards dos planos -->
-  <section id="planos-cards-conteiner" class="cards-container">
-
-    <!-- Plano Básico -->
-    <section class="card plano-card" data-plano="basico" data-aos="fade-right">
-      <i class="fa-solid fa-shield card-icon"></i>
-
-      <h2 data-aos="fade-right" data-aos-delay="100">Plano Básico</h2>
-
-      <p data-aos="fade-right" data-aos-delay="150">
-        Backup automático para dados essenciais, com armazenamento seguro
-        e recuperação sob demanda.
-      </p>
-
-      <ul class="plano-list">
-        <li>Backup automático diário</li>
-        <li>Armazenamento em nuvem criptografado</li>
-        <li>Retenção de dados por período definido</li>
-        <li>Recuperação manual sob solicitação</li>
-        <li>Suporte em horário comercial</li>
-      </ul>
-
-      <div>
-        <button class="btn btn-plano">Começar Agora</button>
-      </div>
-    </section>
-
-    <!-- Plano Profissional -->
-    <section class="card plano-card destaque"  data-plano="profissional" data-aos="fade-right" data-aos-delay="100">
-      <i class="fa-solid fa-bolt card-icon"></i>
-
-      <h2 data-aos="fade-right" data-aos-delay="100">Plano Profissional</h2>
-
-      <p data-aos="fade-right" data-aos-delay="150">
-        Proteção completa com maior frequência de backup
-        e suporte técnico prioritário.
-      </p>
-
-      <ul class="plano-list">
-        <li>Backup automático diário ou incremental</li>
-        <li>Armazenamento em nuvem criptografado</li>
-        <li>Retenção de dados estendida</li>
-        <li>Recuperação rápida com menor tempo de resposta</li>
-        <li>Monitoramento básico dos backups</li>
-        <li>Suporte técnico prioritário</li>
-      </ul>
-
-      <div>
-        <button class="btn btn-plano">Começar Agora</button>
-      </div>
-    </section>
-
-    <!-- Plano Avançado -->
-    <section class="card plano-card" data-plano="avancado" data-aos="fade-right" data-aos-delay="150">
-      <i class="fa-solid fa-server card-icon"></i>
-
-      <h2 data-aos="fade-right" data-aos-delay="100">Plano Avançado</h2>
-
-      <p data-aos="fade-right" data-aos-delay="150">
-        Máximo nível de segurança, monitoramento contínuo
-        e recuperação imediata de dados.
-      </p>
-
-      <ul class="plano-list">
-        <li>Backup automático em múltiplos horários</li>
-        <li>Armazenamento redundante e seguro</li>
-        <li>Retenção de dados personalizada</li>
-        <li>Monitoramento contínuo dos backups</li>
-        <li>Recuperação imediata em caso de falha</li>
-        <li>Suporte técnico especializado</li>
-      </ul>
-
-      <div>
-        <button class="btn btn-plano">Começar Agora</button>
-      </div>
-    </section>
-
-    
-  </section>
-
-</section>
-
-      <!-- CALL TO ACTION CONSULTA -->
-      <div id="cta-conteiner">
-        <section id="cta-consulta" class="cta-landing" data-aos="fade-right">
-          <h2>Tem dúvidas?</h2>
-
-          <p>Faça uma consulta, respondemos em até 15min.</p>
-
-            <button class="cta-btn" id="open-cta">
-              Fazer consulta
-            </button>
-
-        </section>
-      </div>
-
-    </main>
-
-    <div id="plano-overlay" class="hidden"></div>
-
-      <div id="plano-modal" class="hidden">
-      <div class="plano-box" >
-        <button id="plano-close">✕</button>
-
-        <h3 id="plano-titulo"></h3>
-
-        <ul id="plano-beneficios"></ul>
-
-        <p>Não sabe qual plano escolher?</p>
-        <div id="cta-conteiner-plano">
-          <a href="#cta-consulta" id="cta-plano" class="btn btn-default cta-plano">
+      <p>Não sabe qual plano escolher?</p>
+      <div id="cta-conteiner-plano">
+        <a href="#cta-consulta" id="cta-plano" class="btn btn-default cta-plano">
           Fale com um especialista
-          </a>
-        </div>
+        </a>
       </div>
     </div>
+  </div>
 
 
-    <!-- Overlay -->
-    <div id="cta-overlay">
-      <div class="cta-modal">
-        <button class="cta-close" aria-label="Cerrar">✕</button>
+  <!-- Overlay -->
+  <div id="cta-overlay">
+    <div class="cta-modal">
+      <button class="cta-close" aria-label="Cerrar">✕</button>
 
-        <!-- AQUÍ va tu formulario -->
-        <div class="btn-plano" id="cta-placeholder"></div>
-      </div>
+      <!-- AQUÍ va tu formulario -->
+      <div id="cta-placeholder"></div>
     </div>
+  </div>
 
-    
 
-    <footer>
+
+  <footer>
     <div id="footer-conteiner">
 
       <img src="src/img/logo_azul.png" alt="Logotipo da B&R Soluções">
@@ -387,19 +386,19 @@
     </div>
   </footer>
 
-    <script src="src/js/script.js"></script>
-    <script src="src/js/transition.js"></script>
-    <script src="src/js/cta.js"></script>
-    <script src="src/js/whatsapp.js"></script>
-    <script src="src/js/planos.js"></script>
+  <script src="src/js/script.js"></script>
+  <script src="src/js/transition.js"></script>
+  <script src="src/js/cta.js"></script>
+  <script src="src/js/whatsapp.js"></script>
+  <script src="src/js/planos.js"></script>
 
-    <!-- ===============================
+  <!-- ===============================
     =========SCRIPT PARA FORM CTA========
     =================================-->
-    <script>
-      fetch("src/components/cta.html")
-        .then(res => res.text())
-        .then(html => {
+  <script>
+    fetch("src/components/cta.html")
+      .then(res => res.text())
+      .then(html => {
         document.getElementById("cta-placeholder").innerHTML = html;
 
         // AGORA o formulário existe
@@ -418,9 +417,9 @@
           const telefone = document.getElementById("telefone").value.trim();
           const mensagem = document.getElementById("mensagem").value.trim();
 
-          const numeroEmpresa = "554792707304"; 
+          const numeroEmpresa = "554792707304";
 
-      const texto = `
+          const texto = `
 Nova consulta pelo site
 
 Nome: ${nome}
@@ -431,20 +430,21 @@ Mensagem:
 ${mensagem}
 `;
 
-        const url = `https://wa.me/${numeroEmpresa}?text=${encodeURIComponent(texto)}`;
-        window.open(url, "_blank");
+          const url = `https://wa.me/${numeroEmpresa}?text=${encodeURIComponent(texto)}`;
+          window.open(url, "_blank");
+        });
       });
-      });
-    </script>
+  </script>
 
 
-    <!--SCRIPT PARA ANIMAÇÕES -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    </script>
-  </body>
+  <!--SCRIPT PARA ANIMAÇÕES -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+</body>
+
 </html>

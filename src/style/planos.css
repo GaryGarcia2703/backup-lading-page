@@ -46,12 +46,22 @@
   border-radius: 16px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
 
+  text-align: center;
+
   transform: translateY(20px) scale(0.96);
   opacity: 0;
 
   transition:
     transform 0.3s ease,
     opacity 0.3s ease;
+}
+
+.plano-box h3 {
+  background-color: var(--bg-soft-2);
+  padding: 10px 0px;
+  border-radius: 999px;
+  font: 600;
+  font-size: 1.5em;
 }
 
 /* quando modal estiver visível */
@@ -108,39 +118,49 @@ div#cta-conteiner-plano {
   width: 100%;
 }
 
-.btn-plano {
-
+div.btn-plano-div{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.btn-default {
+.btn-plano {
+    display: block;
+    max-width: 450px;
+    width: 100%;
     text-decoration: none;
-    background: linear-gradient(
-        to bottom,
-        #5eead4,
-        #22c55e
-    );
+    color: var(--white);
 
-    color: #053e2a;
-    border-radius: 10px;
+    background: linear-gradient(
+      to bottom,
+      #7fb8ff 0%,
+      #4f8edc 50%,
+      #2f6fbf 100%
+    );
+    border-radius: 999px;
 
     box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.6),
-    0 6px 14px rgba(0, 0, 0, 0.15);
+    inset 0 1px 0 rgba(255,255,255,0.5),
+    0 4px 10px rgba(0,0,0,0.2);
 
-    transition: 
+    cursor: pointer;
+
+    transition:
     transform 0.15s ease,
-    box-shadow 0.15s ease;
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
 }
 
-.btn-default:hover {
+.btn-plano:hover {
     color: var(--white);
     transform: translateY(-1px);
+    filter: brightness(1.05);
     box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.7),
-    0 10px 22px rgba(0, 0, 0, 0.22);
+    inset 0 1px 0 rgba(255,255,255,0.6),
+    0 6px 14px rgba(0,0,0,0.25);
 }
 
-.btn-default:active {
+.btn-plano:active {
   transform: translateY(1px);
   box-shadow:
     inset 0 2px 4px rgba(0, 0, 0, 0.2);
