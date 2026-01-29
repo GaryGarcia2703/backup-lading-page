@@ -71,6 +71,11 @@
   color: #141414; /* Ajusta según tu diseño */
 }
 
+h4 {
+  margin: 10px;
+  font-weight: 500;
+}
+
 #plano-beneficios, 
 .plano-box p, 
 #cta-conteiner-plano {

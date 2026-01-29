@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const planos = {
   basico: {
     titulo: "Plano Básico",
+    sub_titulo: "Proteção essencial para manter seus dados seguros no dia a dia",
     beneficios: [
       { texto: "Backup automático diário", tipo: "vantagem" },
       { texto: "Execução sem intervenção manual", tipo: "vantagem" },
@@ -16,6 +17,7 @@ const planos = {
 
   profissional: {
     titulo: "Plano Profissional",
+    sub_titulo: "Mais controle, desempenho e agilidade para empresas em crescimento",
     beneficios: [
       { texto: "Backup automático diário ou incremental", tipo: "vantagem" },
       { texto: "Redução de impacto em performance", tipo: "vantagem" },
@@ -30,6 +32,7 @@ const planos = {
 
   avancado: {
     titulo: "Plano Avançado",
+    sub_titulo: "Segurança completa, alta disponibilidade e suporte contínuo",
     beneficios: [
       { texto: "Backups em múltiplos horários por dia", tipo: "vantagem" },
       { texto: "Alta disponibilidade dos dados", tipo: "vantagem" },
@@ -48,6 +51,8 @@ const planos = {
   const lista = document.getElementById("plano-beneficios");
   const closeBtn = document.getElementById("plano-close");
   const cta_btn = document.getElementById("cta-plano") 
+  const conteiner_title = document.querySelector("#plano-title-container")
+  const sub_titulo = document.createElement("h4")
 
   // algoritmo para renderizar infomaciones del modal
   document.querySelectorAll(".plano-card").forEach(card => {
@@ -55,7 +60,18 @@ const planos = {
       const tipo = card.dataset.plano;
       const dados = planos[tipo];
 
+      
+      
+      sub_titulo.innerHTML = ""
+      sub_titulo.textContent = dados.sub_titulo
+
+      
+
+      conteiner_title.appendChild(sub_titulo)
+
+
       titulo.textContent = dados.titulo;
+
       lista.innerHTML = "";
 
       dados.beneficios.forEach(item => {
@@ -75,6 +91,7 @@ const planos = {
         const span = document.createElement("span")
         span.textContent = item.texto
 
+        
         li.appendChild(icon)
         li.appendChild(span)
         lista.appendChild(li);
