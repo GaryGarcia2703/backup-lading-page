@@ -1,45 +1,55 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const planos = {
-    basico: {
-      titulo: "Plano Básico",
-      beneficios: [
-        "Backup automático diário",
-        "Criptografia de dados",
-        "Retenção padrão",
-        "Recuperação sob solicitação",
-        "Suporte em horário comercial"
-      ]
-    },
-    profissional: {
-      titulo: "Plano Profissional",
-      beneficios: [
-        "Backup automático diário ou incremental",
-        "Armazenamento criptografado",
-        "Retenção estendida",
-        "Recuperação rápida",
-        "Monitoramento básico",
-        "Suporte técnico prioritário"
-      ]
-    },
-    avancado: {
-      titulo: "Plano Avançado",
-      beneficios: [
-        "Backup em múltiplos horários",
-        "Armazenamento redundante",
-        "Retenção personalizada",
-        "Monitoramento contínuo",
-        "Recuperação imediata",
-        "Suporte especializado 24/7"
-      ]
-    }
-  };
+const planos = {
+  basico: {
+    titulo: "Plano Básico",
+    beneficios: [
+      { texto: "Backup automático diário", tipo: "vantagem" },
+      { texto: "Execução sem intervenção manual", tipo: "vantagem" },
+      { texto: "Criptografia AES-256", tipo: "vantagem" },
+      { texto: "Proteção contra exclusão acidental", tipo: "vantagem" },
+
+      { texto: "Recuperação sob solicitação", tipo: "diferencial" },
+      { texto: "Armazenamento em nuvem segura", tipo: "diferencial" },
+      { texto: "Suporte em horário comercial", tipo: "diferencial" }
+    ]
+  },
+
+  profissional: {
+    titulo: "Plano Profissional",
+    beneficios: [
+      { texto: "Backup automático diário ou incremental", tipo: "vantagem" },
+      { texto: "Redução de impacto em performance", tipo: "vantagem" },
+      { texto: "Criptografia avançada de dados", tipo: "vantagem" },
+      { texto: "Retenção de dados estendida", tipo: "vantagem" },
+
+      { texto: "Recuperação rápida com SLA reduzido", tipo: "diferencial" },
+      { texto: "Monitoramento básico de backups", tipo: "diferencial" },
+      { texto: "Suporte técnico prioritário", tipo: "diferencial" }
+    ]
+  },
+
+  avancado: {
+    titulo: "Plano Avançado",
+    beneficios: [
+      { texto: "Backups em múltiplos horários por dia", tipo: "vantagem" },
+      { texto: "Alta disponibilidade dos dados", tipo: "vantagem" },
+      { texto: "Armazenamento redundante", tipo: "vantagem" },
+      { texto: "Retenção totalmente personalizada", tipo: "vantagem" },
+
+      { texto: "Monitoramento contínuo 24/7", tipo: "diferencial" },
+      { texto: "Recuperação imediata em falhas críticas", tipo: "diferencial" },
+      { texto: "Suporte técnico especializado", tipo: "diferencial" }
+    ]
+  }
+};
 
   const modal = document.getElementById("plano-modal");
-  const overlay = document.getElementById("plano-overlay");
   const titulo = document.getElementById("plano-titulo");
   const lista = document.getElementById("plano-beneficios");
   const closeBtn = document.getElementById("plano-close");
+  const cta_btn = document.getElementById("cta-plano") 
 
+  // algoritmo para renderizar infomaciones del modal
   document.querySelectorAll(".plano-card").forEach(card => {
     card.addEventListener("click", () => {
       const tipo = card.dataset.plano;
@@ -50,22 +60,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
       dados.beneficios.forEach(item => {
         const li = document.createElement("li");
-        li.textContent = item;
+        li.classList.add(item.tipo)
+
+        // icono o emoji creado
+        const icon = document.createElement("i");
+
+        // diferencia para colocar iconos deiferentes segun la clase
+        if (item.tipo === "vantagem") {
+          icon.className = "fa-solid fa-circle-check";
+        } else {
+          icon.className = "fa-solid fa-gear";
+        }
+
+        const span = document.createElement("span")
+        span.textContent = item.texto
+
+        li.appendChild(icon)
+        li.appendChild(span)
         lista.appendChild(li);
       });
 
         modal.classList.add("show");
-        overlay.classList.add("show");
         document.body.style.overflow = "hidden";
     });
   });
 
+  // fechar o modal ao fazer click no botão do cta
+  cta_btn.addEventListener("click" ,() => {
+    modal.classList.remove("show")
+    document.body.style.overflow = "";
+  })
+
+  // fechar o menu de especificações
   function fecharModal() {
     modal.classList.remove("show");
-    overlay.classList.remove("show");
     document.body.style.overflow = "";
   }
 
+  // fechar o modal ao clickar fora dele
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.remove("show");
@@ -73,10 +105,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // chamada da função para fechar modal
   closeBtn.addEventListener("click", fecharModal);
-  overlay.addEventListener("click", fecharModal);
-
-  
 
 });
 

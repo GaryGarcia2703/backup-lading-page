@@ -35,6 +35,7 @@
 #plano-modal.show {
   opacity: 1;
   pointer-events: auto;
+  backdrop-filter: blur(6px);
 }
 
 .plano-box {
@@ -100,9 +101,16 @@ ul#plano-beneficios {
   list-style: none;
 }
 
+
+
 li {
   text-align: start;
+  line-height: 1.5;
 }
+
+
+
+
 
 div#cta-conteiner-plano {
   margin: 10px;
@@ -118,50 +126,4 @@ div#cta-conteiner-plano {
   width: 100%;
 }
 
-div.btn-plano-div{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
 
-.btn-plano {
-    display: block;
-    max-width: 450px;
-    width: 100%;
-    text-decoration: none;
-    color: var(--white);
-
-    background: linear-gradient(
-      to bottom,
-      #7fb8ff 0%,
-      #4f8edc 50%,
-      #2f6fbf 100%
-    );
-    border-radius: 999px;
-
-    box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.5),
-    0 4px 10px rgba(0,0,0,0.2);
-
-    cursor: pointer;
-
-    transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease,
-    filter 0.15s ease;
-}
-
-.btn-plano:hover {
-    color: var(--white);
-    transform: translateY(-1px);
-    filter: brightness(1.05);
-    box-shadow:
-    inset 0 1px 0 rgba(255,255,255,0.6),
-    0 6px 14px rgba(0,0,0,0.25);
-}
-
-.btn-plano:active {
-  transform: translateY(1px);
-  box-shadow:
-    inset 0 2px 4px rgba(0, 0, 0, 0.2);
-}

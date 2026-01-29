@@ -4,7 +4,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.getElementById("cta-overlay");
   const closeBtn = document.querySelector(".cta-close");
 
+  // botón de cta dentro del modal de los planes
+  const cta_btn = document.getElementById("cta-plano") 
+
   if (!openBtn || !overlay) return;
+
+  // abrir modal de whatsapp desde cta-plano
+  cta_btn.addEventListener("click" , () => {
+    overlay.classList.add("show");
+    document.body.style.overflow = "hidden";
+  })
 
   // ===== ABRIR MODAL =====
   openBtn.addEventListener("click", () => {
