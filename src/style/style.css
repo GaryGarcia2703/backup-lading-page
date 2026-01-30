@@ -481,6 +481,31 @@ section#planos-title {
     background-image: linear-gradient(var(--white)20% , var(--bg-soft-2));
 }
 
+/*contenedor del titulo del subtitulo y de la imgen (contenedor padre)*/
+#plano-title-img-conteiner {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+    
+}
+
+/*contenedor del sub-titulo que va a la derecha*/
+#plano-sub-title-continer {
+    background-color: green;
+}
+
+/*contenedor del img que va a la izquierda*/
+#planos-img-conteiner {
+    padding: 10px;
+    background-color: blue;
+}
+
+#planos-img-conteiner img {
+    width: 600px;
+}
+
 /* contenedor cards */
 section#planos-cards-conteiner {
     display: flex;
