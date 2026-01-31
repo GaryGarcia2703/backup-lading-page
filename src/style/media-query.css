@@ -147,6 +147,48 @@
 
 
     /* ============================= */
+    /* Seccion de los planes */
+    /* ============================= */
+
+    #plano-title-img-conteiner {
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 16px;
+        text-align: center;
+    }
+
+    #planos-img-conteiner {
+        padding: 0;
+        width: 100%;
+    }
+
+    #planos-img-conteiner img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    #plano-sub-title-continer {
+        align-items: center;
+        gap: 16px;
+    }
+
+    /* linha azul centralizada no mobile */
+    #plano-sub-title-continer::before {
+        width: 48px;
+    }
+
+    #plano-sub-title-continer p {
+        font-size: 1rem;
+        line-height: 1.7;
+        max-width: 100%;
+        text-align: center;
+    }
+
+
+
+    /* ============================= */
     /* Footer */
     /* ============================= */
 
@@ -283,6 +325,21 @@
         margin-top: 24px;
     }
 
+
+      #plano-title-img-conteiner {
+    gap: 32px;
+    padding: 32px 24px;
+  }
+
+  #planos-img-conteiner img {
+    width: 420px;
+  }
+
+  #plano-sub-title-continer p {
+    font-size: 1.05rem;
+    max-width: 420px;
+  }
+
     
 
 }
@@ -349,6 +406,14 @@
         width: 30vw;             
         padding: 0 2rem;     
     }
+    
+    #planos-img-conteiner img {
+    width: 650px;
+  }
+
+  #plano-sub-title-continer p {
+    max-width: 520px;
+  }
 
 }
 
