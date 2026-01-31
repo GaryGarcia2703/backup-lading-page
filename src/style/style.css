@@ -540,6 +540,60 @@ section#planos-cards-conteiner {
     gap: 50px;
 }
 
+/*card destacada*/ 
+#card-recomendada {
+    position: relative;
+    background: linear-gradient(
+        180deg,
+        #f8fbff 0%,
+        #ffffff 60%
+    );
+
+    border: 2px solid #60a5fa;
+    box-shadow:
+        0 20px 40px rgba(59, 130, 246, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Cinta sutil superior */
+#card-recomendada::before {
+  content: "Mais Popular";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: linear-gradient(
+    to right,
+    #2563eb,
+    #38bdf8
+  );
+  color: #ffffff;
+
+  padding: 13px 28px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 999px;
+
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
+}
+
+/* icono destacado*/
+#card-recomendada .card-icon {
+  
+  color: #2563eb;
+
+  background: linear-gradient(
+     at top,
+    #e0f2fe,
+    #bfdbfe
+  );
+
+  padding: 18px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
 /* lista de ventajas */
 ul.plano-list {
     list-style: none;
